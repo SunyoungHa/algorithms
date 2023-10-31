@@ -6,6 +6,7 @@
 a. [The All Important Coding Interview](https://anniecannons.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/learn/lecture/8533042#overview)
 b. [Getting Better at Coding Questions](https://anniecannons.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/learn/lecture/8533046#overview)
 
+
 Video a.
 When it comes to the general job seeking process, there are two phases: Contact and Interview. During the interview phase, a company will evaluate my coding skills, which are the most important qualities and override every other quality.
 
