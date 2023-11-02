@@ -1,14 +1,3 @@
-/**
-Please take 45 minutes to complete this exercise. If you still need more time, you can use Focus Friday.
-
-Write a JavaScript function that takes a list of registered users (an array of objects containing usernames and passwords) and a username and password as input. The function should return true if the provided username and password match any of the registered users, and false otherwise.
-
-Input:
-    1. An array of objects containing registered users' information (username and password).
-    2. A username and password to validate.
-Output:
-    true if the provided username and password match any registered user; false otherwise.
- */
 
 /**
 Steps
@@ -17,16 +6,38 @@ Steps
 3. Return true if a matching user is found; false otherwise.
  */
 
+
 function validateUserCredentials(users, inputUsername, inputPassword) {
+    return users.some(user => user.username === inputUsername && user.password === inputPassword);
+    }
     
+    // Example usage
+    const registeredUsers = [
+        { username: "user1", password: "password123" },
+        { username: "user2", password: "secretword" },
+        { username: "admin", password: "admin123" }
+    ];
+    const username = "user1";
+    const password = "password123";
+    console.log(validateUserCredentials(registeredUsers, username, password)); // Output: true
+    
+
+    
+// another practice
+
+const userList = [{username:"sunshine", password:"1234"},{username:"shine", password:"5678"}]
+
+
+function login(userList, n, p) {
+  for (let i=0; i<userList.length; i++){
+    const user = userList[i];
+//     console.log(user)
+    if(user.username===n && user.password===p){
+      return true;
+    }
+return false;
+  }
 }
 
-// Example usage
-const registeredUsers = [
-    { username: "user1", password: "password123" },
-    { username: "user2", password: "secretword" },
-    { username: "admin", password: "admin123" }
-];
-const username = "user1";
-const password = "password123";
-console.log(validateUserCredentials(registeredUsers, username, password)); // Output: true
+console.log(login(userList, "sunshine", "1234"))
+console.log(login(userList, "sunshine", "134"))

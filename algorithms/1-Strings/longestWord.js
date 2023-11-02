@@ -20,3 +20,29 @@ function findLongestWord(str) {
   return longestWordLength;
 }
 
+// another way using forEach
+function findLongestWordLength2(str){
+  let words= str.split(" ");
+  let longestLength = 0;
+    words.forEach((word)=>{
+  if (word.length>longestLength){longestLength=word.length}; 
+    })
+    return longestLength;
+  }
+  console.log(findLongestWordLength2("find Longest Word Length"))
+
+
+// find the shortest word
+
+function shortestLength(str){
+  let words=str.split(" ");
+  let shortest=words[0];
+
+  for(let i=0;i<words.length;i++){
+    if(words[i].length<shortest.length){
+      shortest=words[i].length;
+  }
+    return shortest;
+}
+}
+console.log(shortestLength("The quick brown fox jumped over the lazy dog"));
